@@ -1,0 +1,99 @@
+/* ============================= */
+/* Layout */
+/* ============================= */
+.layoutWrapper {
+  /*@apply flex flex-col; /* Tailwind utilities */
+  display: flex;        /* raw CSS fallback */
+  flex-direction: column; /* raw CSS fallback */
+  min-height: 100vh;    /* fallback for min-h-screen */
+}
+
+.layoutMain {
+  /*@apply flex-1 w-full px-6 py-12 mx-auto; /* Tailwind utilities */
+  flex: 1;                /* fallback */
+  width: 100%;            /* fallback */
+  padding-left: 1.5rem;   /* px-6 */
+  padding-right: 1.5rem;
+  padding-top: 3rem;      /* py-12 */
+  padding-bottom: 3rem;
+  margin-left: auto;      /* mx-auto */
+  margin-right: auto;
+}
+
+/* ============================= */
+/* Header */
+/* ============================= */
+.header {
+  /*@apply border-b py-4 px-8 flex justify-between items-center bg-white;
+  border-bottom-width: 1px;  /* fallback */
+  background-color: #ffffff; /* fallback */
+}
+
+.headerTitle {
+  /*@apply text-2xl font-bold tracking-tight;
+  font-size: 1.5rem;   /* fallback */
+  font-weight: 700;
+}
+
+.headerNav {
+ /* @apply flex gap-6 text-sm font-medium;*/
+  display: flex;       /* fallback */
+  gap: 1.5rem;         /* fallback */
+  font-size: 0.875rem; /* fallback */
+  font-weight: 500;
+}
+
+/* ============================= */
+/* Footer */
+/* ============================= */
+.footer {
+  /*@apply mt-16 py-8 text-center text-gray-500 text-sm border-t;*/
+  margin-top: 4rem;          /* mt-16 fallback */
+  padding-top: 2rem;          /* py-8 fallback */
+  padding-bottom: 2rem;
+  text-align: center;         /* fallback */
+  color: #6b7280;             /* text-gray-500 fallback */
+  font-size: 0.875rem;        /* text-sm fallback */
+  border-top-width: 1px;      /* border-t fallback */
+}
+
+.footerLinks {
+  /*@apply flex justify-center gap-4 mt-2;*/
+  display: flex;       /* fallback */
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* ============================= */
+/* Hero Section */
+/* ============================= */
+.heroSection {
+ /* @apply text-center;*/
+  text-align: center; /* fallback */
+}
+
+.heroTitle {
+  /*@apply text-4xl font-semibold mb-4;*/
+  font-size: 2.25rem; /* fallback */
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.heroDesc {
+ /* @apply text-lg text-gray-600 mb-8;*/
+  font-size: 1.125rem; /* fallback */
+  color: #4b5563;      /* fallback */
+  margin-bottom: 2rem;
+}
+
+.heroCTA {
+  /*@apply text-blue-600 font-medium hover:underline;*/
+  color: #2563eb;        /* fallback */
+  font-weight: 500;
+  text-decoration: none; /* default */
+}
+
+.heroCTA:hover {
+  text-decoration: underline; /* fallback */
+}
