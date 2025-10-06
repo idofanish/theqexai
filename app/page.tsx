@@ -8,7 +8,7 @@ export default function Home() {
         Building Confidence in AI Systems
       </h2>
       <p className="heroDesc">
-        Exploring Quality, Testing, and Assurance in the Age of Artificial Intelligence.
+        Exploring Quality, Testing, and Assurance in the Age of AI.
       </p>
       <Link href="/blog" className="heroCTA">
         Read Latest Insights →
