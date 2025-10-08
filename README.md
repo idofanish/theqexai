@@ -1,18 +1,51 @@
+# Basic Project Structure
+
+theqexai/
+├─ .next/
+├─ app/
+│ ├─ components/ # Increment 1 and future components.
+│ │ ├─ Footer.tsx # Optional simple footer
+│ │ └─ Header.tsx # Increment 1 Header
+│ │
+│ ├─ globals.css
+│ ├─ layout.tsx # Main layout with Header & Footer
+│ └─ page.tsx # Home page
+│
+├─ docs/ #generated static export for GitHub Pages.
+├─ node_modules/
+├─ public/
+│ └─ images/ # Logos / SVGs static assets like logos or SVGs
+│
+├─ .gitignore
+├─ CNAME #custom domain for GitHub Pages
+├─ deploy.js #automates build & push to GitHub Pages
+├─ eslint.config.mjs
+├─ index.html
+├─ next-env.d.ts
+├─ next.config.ts
+├─ package-lock.json
+├─ package.json
+├─ postcss.config.mjs
+├─ README.md
+└─ tsconfig.json
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
 First, run the development server:
 
-```bash
+# Install dependencies
+
+npm install
+
+# Run locally
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+
+# Build for production
+
+npm run build
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
